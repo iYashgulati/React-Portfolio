@@ -1,12 +1,12 @@
 import styles from './page.module.css'
-import Navbar from '/Users/69830/Downloads/Personal/react-portfolio/portfolio/src/app/components/nav/nav'
+import Navbar from './nav/nav'
 import Jambox from './projects/jambox-games/jamboxSection'
 import Cosmonats from './projects/cosmonats/cosmonatsSection'
 import TPC from './projects/tiger-princess-club/tpcSection'
 import TC from './projects/terminal-charging/tcSection'
 import Octavo from './projects/octavo-press/opSection'
 import Taeger from './projects/taeger-art/taSection'
-import Footer from '/Users/69830/Downloads/Personal/react-portfolio/portfolio/src/app/components/footer/footer'
+import Footer from './footer/footer'
 
 
 export default function Home() {

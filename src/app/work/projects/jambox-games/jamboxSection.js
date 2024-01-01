@@ -1,6 +1,6 @@
 import jamStyles from './jambox.module.css'
-import workStyles from '/Users/69830/Downloads/Personal/react-portfolio/portfolio/src/app/work/works.module.css'
-import Navbar from '/Users/69830/Downloads/Personal/react-portfolio/portfolio/src/app/components/nav/nav'
+import workStyles from 'app/work/works.module.css'
+import Navbar from 'app/components/nav/nav'
 
 export default function Home() {
   return (

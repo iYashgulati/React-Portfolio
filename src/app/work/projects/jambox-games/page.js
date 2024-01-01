@@ -1,10 +1,10 @@
 "use client";
 
 import jamStyles from './jambox.module.css'
-import styles from '/Users/69830/Downloads/Personal/react-portfolio/portfolio/src/app/work/projects/projects.module.css'
 import React, { useState, useRef, useEffect } from 'react';
-import Navbar from '/Users/69830/Downloads/Personal/react-portfolio/portfolio/src/app/components/nav/nav'
-import Footer from '/Users/69830/Downloads/Personal/react-portfolio/portfolio/src/app/components/footer/footer'
+import styles from 'app/work/projects/projects.module.css'
+import Navbar from 'app/components/nav/nav'
+import Footer from 'app/components/footer/footer'
 
 export default function Home() {
 
