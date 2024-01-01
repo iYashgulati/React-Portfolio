@@ -3,7 +3,7 @@
 const logo = '/img/logo/logo.png'
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './nav.module.css';
-import navStyles from '/Users/69830/Downloads/Personal/react-portfolio/portfolio/src/app/page.module.css'
+import navStyles from 'app/page.module.css'
 
 
 export default function Navbar() {
