@@ -287,6 +287,9 @@
   
   @media screen and (max-width: 768px) {
 
+    #workThree {
+      right: 0;
+    }
     .workCardImgTwo {
       position: absolute;
       z-index: -1;

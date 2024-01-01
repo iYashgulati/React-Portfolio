@@ -565,7 +565,7 @@ Responsive CSS
 
 /* Min Width 768px and Max Width 991px */
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
 
     #projDescriptionInverse,
     #projDescription {
@@ -609,7 +609,8 @@ Responsive CSS
     }
 
     .moreProjectsWrapper {
-        width: 95%;
+        width: calc(100% - 1.5vw);
+        padding-left: 1.5vw;
         margin: 0;
     }
 
@@ -640,9 +641,17 @@ Responsive CSS
     }
 
     .innerViewport {
-        width: 90vw;
+        width: 100vw;
     }
 
+    .innerViewport img {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    #viewport {
+        height: 53.5vw;
+    }
     .projDescriptionLeft {
         margin-left: 0;
     }

@@ -219,6 +219,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .signoff {
+    width: 80%;
+  }
+  
   #topRightClQn {
     position: absolute;
     top: -40px;

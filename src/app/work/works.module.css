@@ -1,4 +1,8 @@
 #SingleWork{
+  margin-top: 75px;
+}
+
+#SingleWork:nth-child(3){
   margin-top: 120px;
 }
 
@@ -185,26 +189,29 @@
 
 /* Min Width 300px and Max Width 767px */
 
-@media (min-width: 300px) and (max-width: 767px) {
+@media (max-width: 767px) {
+
+  .singleWorkContainer {
+    width: 100vw;
+  }
+
   .workCardImg img {
-    max-width: 100%;
-    width: 100%;
-    min-height: 40%;
-    max-height: 40%;
-    height: 100%;
-    border-radius: 30px;
+    border-radius: 10px;
   }
 
   .workCardContentContainer {
     flex-direction: column;
+    padding-left:30px ;
+    padding-right:30px ;
   }
 
   .singleWorkNumber {
-    margin-bottom: -70px;
+    margin-bottom: -100px;
+    margin-left: 21px;
   }
 
   .singleWorkNumber h1 {
-    font-size: 100px;
+    font-size: 150px;
   }
 
   .workCardImg {
@@ -228,5 +235,21 @@
 
   .workCardInfo {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .singleWorkNumber h1 {
+    font-size: 100px;
+  }
+
+  .singleWorkNumber {
+    margin-bottom: -70px;
+    margin-left: 21px;
+  }
+
+  .workCardContentContainer {
+    padding-top: 10px;
+    padding-bottom: 0;
   }
 }

@@ -1,7 +1,7 @@
 import styles from './index.module.css'
-const shape014 = '/img/shapes/shape014.png'
-const shape064 = '/img/shapes/shape064.png'
-const Shape107 = '/img/shapes/shape107.png'
+const shape014 = '/img/shapes/Shape014.png'
+const shape064 = '/img/shapes/Shape064.png'
+const Shape107 = '/img/shapes/Shape107.png'
 
 export default function Index() {
     return (
