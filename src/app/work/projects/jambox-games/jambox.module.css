@@ -1,0 +1,18 @@
+.main {
+    margin: 0;
+    --background: white;
+    background: var(--background);
+    --footerBG: var(--background);
+    --navBG: var(--background); 
+    --mainColor: #308cb4;
+    --viewProjectHoverColor: #52B2DB;
+    --headerBG: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/mockup-bg/jambox.jpg');
+    --headerPOS: top; 
+    --summaryColor: black;
+    --navbg: var(--mainColor);
+    --footerbg: var(--mainColor);
+}
+
+.main:host {
+    display: none !important;
+  }

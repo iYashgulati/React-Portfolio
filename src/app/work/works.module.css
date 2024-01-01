@@ -1,0 +1,232 @@
+#SingleWork{
+  margin-top: 120px;
+}
+
+.singleWorkContainer {
+    max-width: 1500px;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+  }
+  
+  .singleWorkNumber {
+    position: relative;
+    margin-bottom: -120px;
+    z-index: 1;
+  }
+
+  .arrowIcon {
+    display: flex;
+  }
+  
+  .singleWorkNumber h1 {
+    font-family: "Poppins";
+    font-size: 200px;
+    color: transparent;
+    margin: 0;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+  
+  }
+  
+  .workCardImg {
+    position: relative;
+    border-radius: 40px;
+    z-index: 2;
+  }
+  
+  .workCardImg img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    max-height: 800px;
+    height: 100%;
+    border-radius: 40px;
+  }
+  
+  .workCardContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0 60px;
+  }
+  
+  .workCardTitle,
+  .workCardDesc,
+  .workCardInfo {
+    max-width: 33%;
+    width: 100%;
+  }
+  
+  .workCardTitle h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .workCardDesc p {
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #bdbdbd;
+    margin: 0;
+  }
+  
+  .workCardLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    background: #26262a;
+    border-radius: 100%;
+  }
+  
+  .workCardLink a svg {
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .workCardInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+  }
+  
+  .projectInfoWrapper {
+    width: 100%;
+  }
+  
+  .projectInfo {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .projectInfoLeft {
+    max-width: 100px;
+    width: 100%;
+  }
+  
+  .projectInfoLeft h6 {
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .projectInfoRight p {
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #bdbdbd;
+    margin: 0;
+  }
+  
+  /* ===========***===========
+  Responsive CSS
+  ===========***=========== */
+  
+  /* Min Width 1200px and Max Width 1399px */
+  
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .work-card-img img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 60%;
+    max-height: 60%;
+    height: 100%;
+  }
+}
+
+/* Min Width 992px and Max Width 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .workCardImg img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 60%;
+    max-height: 60%;
+    height: 100%;
+  }
+}
+
+/* Min Width 768px and Max Width 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .workCardImg img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 50%;
+    max-height: 50%;
+    height: 100%;
+    border-radius: 30px;
+  }
+
+  .workCardContentContainer {
+    flex-direction: column;
+  }
+
+  .workCardTitle,
+  .workCardDesc,
+  .workCardInfo {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .workCardDesc {
+    padding: 20px 0 30px;
+  }
+
+  .workCardInfo {
+    padding-left: 0;
+  }
+}
+
+/* Min Width 300px and Max Width 767px */
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .workCardImg img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 40%;
+    max-height: 40%;
+    height: 100%;
+    border-radius: 30px;
+  }
+
+  .workCardContentContainer {
+    flex-direction: column;
+  }
+
+  .singleWorkNumber {
+    margin-bottom: -70px;
+  }
+
+  .singleWorkNumber h1 {
+    font-size: 100px;
+  }
+
+  .workCardImg {
+    padding: 10px;
+  }
+
+  .workCardTitle,
+  .workCardDesc,
+  .workCardInfo {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .workCardTitle h2 {
+    font-size: 30px;
+  }
+
+  .workCardDesc {
+    padding: 20px 0 30px;
+  }
+
+  .workCardInfo {
+    padding-left: 0;
+  }
+}

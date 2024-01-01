@@ -1,0 +1,9 @@
+.main {
+    --mainColor: #45485E;
+    --viewProjectHoverColor: #727697;
+    --headerBG: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/mockup-bg/octavo.jpg');
+    --headerPOS: bottom;
+    --navbg: var(--mainColor);
+    --footerbg: var(--mainColor);
+
+}

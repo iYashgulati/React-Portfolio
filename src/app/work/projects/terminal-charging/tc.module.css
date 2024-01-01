@@ -1,0 +1,8 @@
+.main{
+    --mainColor: #1A1D28;
+    --viewProjectHoverColor: #42476a;
+    --headerBG: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/mockup-bg/tc.jpg');
+    --headerPOS: top;
+    --navbg: var(--mainColor);
+    --footerbg: var(--mainColor);
+}

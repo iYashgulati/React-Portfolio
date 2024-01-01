@@ -1,0 +1,20 @@
+
+.actFooter {
+    position: relative;
+    background: var(--footerbg);
+  }
+  
+  .actFooter p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  
+  .sectionLine {
+    height: 1px;
+    width: 100%;
+    background: #9ab9ef;
+  }

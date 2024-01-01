@@ -1,0 +1,399 @@
+.shape087{
+    width: 350px;
+    height: 350px;
+    filter: blur(40px) brightness(0.8);
+    position: absolute;
+    top: -120px;
+    right: 15%;
+    opacity: 0.8;
+}
+
+.shape041{
+    width: 250px;
+    height: 250px;
+    filter: blur(40px) brightness(0.8);
+    position: absolute;
+    top: 80px;
+    left: 3%;
+    opacity: 0.8;
+}
+
+
+#workSection {
+    position: relative;
+}
+
+.blurWorktoprgt {
+    width: 600px;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    filter: blur(40px) brightness(1);
+    left: 200px;
+   }
+   
+   .workContent {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 75px;
+    position: relative;
+   }
+   
+   .workContent h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 50px;
+    width: 69%;
+    margin: auto;
+   }
+
+   .workContent h3 {
+    color: #9ab9ef;
+    margin-bottom: 10px;
+    font-family: 'Space Mono';
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+   }
+   
+   .sectionNum {
+    color: #9ab9ef;
+   }
+   
+   .cardsContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin: 50px auto 0 auto;
+   }
+   
+   .workCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   
+   .workCardLeft {
+    width: 600px;
+    height: 350px;
+   }
+   
+   .workCardRight {
+    width: 50%;
+   }
+
+   #cardTwo .workCardRight p{
+    right: -50px;
+   }
+   
+   .workCardRight h3 {
+    color: #9ab9ef;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-family: 'Space Mono';
+   }
+   
+   .workCardRight h2 {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: calc(30px + 0.1vw);
+   }
+   
+   .workCardRight p {
+    position: relative;
+    right: 50px;
+    padding: 20px;
+    background: rgb(19, 19, 19);
+    box-shadow: 2px 2px 100px rgb(31, 31, 31);
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #5773A0;
+    color: white;
+    text-align: right;
+    margin-top: 20px;
+   }
+   
+   .workCardRight h2,
+   .workCardRight h3 {
+    text-align: right;
+    position: relative;
+    right: 50px;
+   }
+   
+   .rightV2 h2,
+   .rightV2 h3 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    position: relative;
+    left: 50px;
+   }
+   
+   .rightV2 p {
+    position: relative;
+    left: 25px;
+    z-index: 2;
+    padding: 20px;
+    background: rgb(19, 19, 19);
+    box-shadow: 2px 2px 100px rgb(31, 31, 31);
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #5773A0;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+   }
+   
+
+.dotted {
+    --dotSize: 0.04rem;
+    position: absolute;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.346) var(--dotSize), transparent 0);
+    background-size: 1.35rem 1.35rem;
+    background-repeat: round;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(400px, 100%));
+    gap: 1.25rem;
+    z-index: -1;
+}
+  
+.homeContent {
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    font-family: 'Poppins';
+    color: white;
+}
+
+   #workOne {
+    background: linear-gradient(to right, #f3b98359, #a5228655, #65aad862), url('/img/mockup-bg/jambox.jpg');
+    /* filter: brightness(1.5); */
+    background-size: cover;
+    background-position: center;
+   }
+   
+   #workTwo {
+    background: linear-gradient(to right, #f3b98359, #a5228655, #65aad862), url('/img/mockup-bg/tpc.jpg');
+    /* filter: brightness(1.5); */
+    background-size: cover;
+    background-position: center;
+   }
+   
+   #workThree {
+    background: linear-gradient(to right, #f3b98359, #a5228655, #65aad862), url('/img/mockup-bg/tc.jpg');
+    /* filter: brightness(1.5); */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    position: relative;
+    right: 25px;
+    transition: 250ms all linear;
+
+   }
+   
+   .cardTwo,
+   .cardThree {
+    margin-top: 50px;
+   }
+   
+   .workCardImg {
+    position: absolute;
+    z-index: -1;
+    right: 42%;
+    top: 26%;
+    transform: translateX(50%);
+   }
+   
+   .workCardImg img {
+    filter: blur(30px) brightness(1.2);
+    width: 200px;
+   }
+   
+   .workCardImgTwo {
+    position: absolute;
+    z-index: -1;
+    left: 42%;
+    top: 26%;
+    transform: translateX(-50%);
+   }
+   
+   .workCardImgTwo img {
+    filter: blur(30px) brightness(1.2);
+    width: 200px;
+   }
+
+/* 
+@media screen and (max-width: 1200px) {
+    .home-content h1 {
+      font-size: 14vw;
+    }
+    .about-left {
+      width: 60%;
+    }
+    .about-right img {
+      width: 100%;
+    }
+    .about-content h1 {
+      font-size: 44px;
+    }
+  
+    .about-content p {
+      font-size: 18px;
+    }
+    .cards-container {
+      width: 100%;
+    }
+  } */
+  
+  @media screen and (max-width: 1050px) {
+    .workCardLeft {
+      width: 450px;
+      height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    .workContent {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .workCardLeft {
+      width: 330px;
+      height: 220px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .workCardImgTwo {
+      position: absolute;
+      z-index: -1;
+      left: 42%;
+      top: 40%;
+      transform: translateX(-50%);
+     }
+
+    #topRightClQn {
+      position: absolute;
+      top: -40px;
+      left: 200px;
+      filter: blur(30px);
+      width: 200px;
+    }
+
+    .workCardRight {
+      width: 115%;
+      margin-top: 25px;
+    }
+  
+    .workCardImg {
+      position: absolute;
+      z-index: -1;
+      right: 42%;
+      top: 35%;
+      transform: translateX(50%);
+    }
+  
+   
+    .workCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .workCardLeft{
+      width: 80vw;
+      height: 45vw;
+    }
+  
+    #cardTwo{
+      flex-direction: column-reverse;
+    }
+    .work-card-right {
+      width: 80vw;
+      margin-top: 20px;
+    }
+  
+    .workCardRight h2, .workCardRight h3 {
+      text-align: center;
+      right: 0;
+    }
+  
+    .workCardRight p {
+      margin-top: 5px;
+      right: 0;
+      background: none;
+      text-align: center;
+    }
+  
+    #rightV2 h2, #rightV2 h3 {
+      text-align: center;
+      left: 0;
+    }
+  
+    #rightV2 p {
+      margin-top: 5px;
+      left: 0;
+      background: none;
+      text-align: center;
+      text-shadow: none;
+    }
+  
+    .workCardRight p {
+      box-shadow: none;
+    }
+  
+    .workTwo {
+      right: 0;
+    }
+    .workContent h1 {
+      text-align: center;
+      width: 100%;
+    }
+    .workContent {
+      padding-top: 20px;
+    }
+  
+    #workSection img {
+      max-width: 350px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .workContent h1 {
+      font-size: 28px;
+    }
+  
+    .workContent {
+      padding-bottom: 25px;
+    }
+
+    .midRightFoot {
+      display: none;
+    }
+    .workContent h3 {
+      font-size: 14px;
+    }
+  }

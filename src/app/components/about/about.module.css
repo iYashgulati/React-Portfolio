@@ -1,0 +1,210 @@
+
+#about {
+    position: relative; 
+
+  }
+  
+  .aboutImages {
+    z-index: -1;
+    position: absolute;
+  }
+
+  .dotted {
+    --dotSize: 0.04rem;
+    position: absolute;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.346) var(--dotSize), transparent 0);
+    background-size: 1.35rem 1.35rem;
+    background-repeat: round;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(400px, 100%));
+    gap: 1.25rem;
+    z-index: -1;
+}
+  
+.homeContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    font-family: 'Poppins';
+    color: white;
+    font-size: 48px;
+    overflow-y: visible;
+}
+  .aboutImages .aboutTopRightBlur {
+    position: absolute;
+    width: 400px;
+    filter: blur(30px); 
+    left: 120px;
+    opacity: 0.7;
+    top: -100px;
+  }
+
+  .aboutImages {
+    top: 0;
+    left: 0;
+  }
+  
+  .aboutContent {  
+    padding-top: 100px;
+    padding-bottom: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+  }
+  
+  .aboutContent h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+  }
+  
+  .aboutContent p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .aboutLeft h5 {
+    color: #9ab9ef;
+    margin-bottom: 10px;
+    font-family: 'Space Mono';
+    font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+  
+  .aboutLeft {
+    width: 49%;
+  }
+  
+  .aboutRight {
+    width: 40%;
+  }
+  
+  .aboutRight img {
+    width: 80%;
+  }
+  
+  .aboutLeft a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 17px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+    position: relative;
+    top: 30px;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  
+  
+  .aboutLeft a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 17px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+    position: relative;
+    top: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 250ms all linear;
+  }
+  
+  .aboutLeft a:hover {
+    background: white;
+    color: black;
+  }
+  
+
+@media screen and (max-width: 1200px) {
+  .aboutLeft {
+    width: 60%;
+  }
+  .aboutRight img {
+    width: 100%;
+  }
+  .aboutContent h1 {
+    font-size: 44px;
+  }
+
+  .aboutContent p {
+    font-size: 18px;
+  }
+  .cardsContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutContent {
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .aboutLeft {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #topRightClQn {
+    position: absolute;
+    top: -40px;
+    left: 200px;
+    filter: blur(30px);
+    width: 200px;
+  }
+  .aboutLeft {
+    width: 100%;
+  }
+
+  .aboutRight {
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .aboutRight img {
+    width: 40%;
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .midRightFoot {
+    display: none;
+  }
+
+  .aboutLeft h5 {
+    font-size: 14px;
+  }
+
+  .aboutLeft h1{
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .aboutLeft a {
+    font-size: 10px;
+  }
+}

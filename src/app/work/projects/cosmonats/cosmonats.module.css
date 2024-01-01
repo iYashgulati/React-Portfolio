@@ -1,0 +1,11 @@
+.main {
+  --background: white;
+  --mainColor: #1D2531;
+  --viewProjectHoverColor: #3D4D66;
+  --altcolor: #7289AC;
+  --headerBG: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/mockup-bg/cosmo.jpg');
+  --headerPOS: top;
+  --summaryColor: black;
+  --navbg: var(--mainColor);
+  --footerbg: var(--mainColor);
+}

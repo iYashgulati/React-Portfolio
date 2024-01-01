@@ -1,0 +1,260 @@
+
+#clientsWord {
+  position: relative;
+}
+
+.testmonalContainer {
+  margin-top: 75px;
+}
+
+
+.dotted {
+  --dotSize: 0.04rem;
+  position: absolute;
+  background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.346) var(--dotSize), transparent 0);
+  background-size: 1.35rem 1.35rem;
+  background-repeat: round;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(400px, 100%));
+  gap: 1.25rem;
+  z-index: -1;
+}
+
+.clientsWordContent {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.clientsWordContent h1 {
+  font-size: 50px;
+  color: #fff;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  z-index: 99;
+}
+
+.clientsWordContent h3 {
+  color: #9ab9ef;
+  margin-bottom: 10px;
+  font-family: 'Space Mono';
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 99;
+}
+
+.clientsWordContent .differentColorBold {
+  color: #9ab9ef;
+}
+
+#testimonials {
+  height: 600px;
+}
+
+#fade {
+  animation-name: fade;
+  animation-duration: 7s;
+  --negativeSlideshowMovementWidth: -75px; 
+  --slideshowMovementWidth: 75px; 
+}
+
+@keyframes fade {
+  0% {
+      transform: translateX(var(--negativeSlideshowMovementWidth));
+      opacity: 0;
+  } 
+
+  15% {
+      opacity: 1;
+  }
+
+  85% {
+      opacity: 1;
+  }
+
+  100% {
+      transform: translateX(var(--slideshowMovementWidth));
+      opacity: 0;
+  }
+}
+
+.testimonalLeft {
+  width: 58%;
+  position: absolute;
+  left: 9%;
+  height: 500px;
+}
+
+.testimonalContent {
+  width: 75%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonalContent p {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  color: white;
+  line-height: 1.5;
+  word-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testimonal {
+  border: 1px solid #9ab9ef;
+  width: 625px;
+  height: 350px;
+  position: relative;  
+}
+
+.testimonalRightContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.testimonalNumeral {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 50px;
+  align-items: baseline;
+}
+
+.testimonalNumber {
+  font-size: 35px;
+  color: #9ab9ef;
+}
+
+.testimonalDescription {
+  font-size: 12px;
+  width: 175px;
+  letter-spacing: 2.5px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 6px;
+  line-height: 15px;
+}
+
+.signoff {
+  position: absolute;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 11px;
+  text-transform: capitalize;
+  color: white;
+  bottom: 15px;
+  right: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#topRightFoot {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  width: 320px;
+  filter: blur(30px);
+  z-index: -1;
+}
+
+#footOp {
+  opacity: 0.4;
+  top: 100px;
+}
+
+#midRightFoot {
+  position: absolute;
+  top: 180px;
+  right: 350px;
+  width: 270px;
+  filter: blur(30px);
+  z-index: -1;
+}
+
+#topRightCl {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  filter: blur(30px);
+  width: 200px;
+}
+
+#topRightClQn {
+  position: absolute;
+  top: 40px;
+  left: 400px;
+  filter: blur(30px);
+  width: 200px;
+}
+
+#bottomRightFoot {
+  position: absolute;
+  bottom: -50px;
+  right: 150px;
+  filter: blur(30px);
+  width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  #topRightClQn {
+    position: absolute;
+    top: -40px;
+    left: 200px;
+    filter: blur(30px);
+    width: 200px;
+  }
+  #fade {
+    animation-name: fade;
+    animation-duration: 7s;
+    --negativeSlideshowMovementWidth: -35px;
+    --slideshowMovementWidth: 35px;
+  }
+  .testimonal {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonal {
+    width: 400px;
+  }
+  .clientsWordContent h1 {
+    font-size: 36px;
+  }
+  
+  .midRightFoot {
+    display: none;
+  }
+  .clientsWordContent h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .testimonal {
+    width: 292px;
+}
+}

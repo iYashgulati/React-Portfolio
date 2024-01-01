@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.contextContent {
+    position: relative;
+    height: 100%;
+}
+
+#context h1 {
+    font-family: 'Poppins';
+    font-size: 75px;
+    line-height: 1.05;
+    color: white;
+    letter-spacing: -1px;
+}
+
+#context h2 {
+    font-family: 'Poppins';
+    font-size: 65px;
+    color: white;
+    margin-top: 5px;
+}
+
+.headers {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    margin-left: 50px;
+}
+
+.line {
+    width: 35px;
+    height: 8px;
+    background-color: white;
+}
+
+.headers h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#summary {
+    height: auto;
+    width: 100vw;
+    background: white;
+    z-index: 3;
+}
+
+#summary h1 {
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    width: 80%;
+    margin-left: 50px;
+    color: black;
+}
+
+.summaryContent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    width: 92vw;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rightBrief {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.leftBrief {
+    width: 100%;
+}
+
+
+#context {
+    height: 750px;
+    margin-top: 70px;
+    background: var(--headerBG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: var(--headerPOS);
+    z-index: 2;
+}
+
+
+.button {
+    position: absolute;
+    margin-left: 50px;
+    top: 70%;
+    transform: translateY(-70%);
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Space Mono';
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 10px;
+    transition: 250ms all linear;
+}
+
+.button a::before {
+    z-index: 5;
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -7px;
+    height: 3px;
+    left: 0;
+    display: block;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+    transform: rotate(2deg);
+}
+
+.button a:hover:before {
+    background: var(--viewProjectHoverColor);
+    height: 10px;
+    z-index: 0;
+}
+
+
+.rightBrief h3 {
+    font-family: 'Space Mono';
+    color: black;
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.rightBrief h2 {
+    margin-top: 10px;
+    font-family: 'Poppins';
+    color: var(--mainColor);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.infoCard {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cardLine {
+    height: 1px;
+    width: 20px;
+    background: var(--viewProjectHoverColor);
+    position: relative;
+}
+
+.main section {
+    position: sticky;
+    top: 0;
+}
+
+.scrollP {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+}
+
+.scrollP a {
+    color: white;
+    font-family: 'Space Mono';
+    text-decoration: none;
+    letter-spacing: 0.2px;
+}
+
+/* anim */
+
+.headersH1 {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease 0s;
+    transition-delay: 0s;
+}
+
+.headersH1.anim {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.headersH2 {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1.3s ease 0s;
+    transition-delay: 0.5s;
+}
+
+.headersH2.anim {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
+
+.button {
+    opacity: 0;
+    transform: translate(-25px, -25px);
+    transition: all 2s ease 0s;
+    transition-delay: 1s;
+}
+
+.button.anim {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.scrollP {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 2.5s ease 0s;
+    transition-delay: 1.3s;
+}
+
+.scrollP.anim {
+    opacity: 1;
+    transform: translateY(0px) translateX(-50%);
+}
+
+#home {
+    margin-top: calc(100vh - 600px);
+    transition: all 2.5s ease 0s;
+    transition-delay: 1.3s;
+    z-index: 2;
+}
+
+#home img {
+    width: 70vw;
+    margin: auto;
+}
+
+#home.anim {
+    margin-top: 0;
+}
+
+/* Viewport section */
+#viewport {
+    background-color: var(--mainColor);
+    height: 58vw;
+    max-height: 1200px;
+    z-index: 5;
+    position: relative;
+}
+
+.innerViewport {
+    width: 82%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4vw;
+    background: var(--viewProjectHoverColor);
+}
+
+.innerViewport img {
+    margin: auto;
+    margin: auto;
+    padding: 3vw;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    border-radius: 4vw;
+}
+
+#projDescription {
+    z-index: 6;
+    background: var(--mainColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 100px;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.projDescriptionLeft {
+    margin-left: 3vw;
+    width: 90%;
+    line-height: 1;
+}
+
+.projDescriptionLeft h1 {
+    font-family: 'Space Mono';
+    font-size: 36px;
+    margin-left: 3.5vw;
+    color: white;
+}
+
+.projDescriptionRight {
+    margin-right: 1vw;
+    width: 100%;
+    margin-left: 0%;
+}
+
+#projDescription .projDescriptionLeft,
+#projDescription .projDescriptionRight {
+    color: var(--mainColor);
+}
+
+#projDescription .projDescriptionRight h1 {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    width: 80%;
+    line-height: 1.1;
+    color: white;
+    margin-left: 50px;
+    
+}
+
+#projDescriptionInverse {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+}
+
+#projDescriptionInverse .projDescriptionLeft h1 {
+    font-family: 'Space Mono';
+    font-size: 36px;
+    margin-left: 3.5vw;
+    color: var(--mainColor);
+}
+
+#projDescriptionInverse .projDescriptionRight h1 {
+    color: var(--mainColor);
+}
+
+#projDescriptionInverse .projDescriptionRight h1 {
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    width: 80%;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-left: 50px;
+}
+
+.probSol {
+    z-index: 5 !important;
+    position: sticky;
+}
+
+#projDescriptionInverse h1 {
+    color: white;
+}
+
+/* similar projects section */
+
+#moreprojects {
+    background: white;
+    z-index: 6;
+    position: relative;
+}
+
+/* Scrollbar */
+.main body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+@media screen and (max-width: 1000px) {
+    .summaryContent {
+        width: 97vw;
+    }
+
+    #summary h1 {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #context h1 {
+        font-size: 55px;
+    }
+
+    #context h2 {
+        font-size: 52px;
+    }
+
+    #context {
+        height: 680px;
+    }
+
+    #summary h1 {
+        width: calc(100% - 100px);
+    }
+
+    .summaryContent {
+        flex-direction: column;
+    }
+
+    .rightBrief {
+        margin-top: 50px;
+    }
+
+    .line {
+        width: 25px;
+        height: 5px;
+        margin-left: 15px;
+    }
+
+    #context {
+        height: 680px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .headers {
+        margin-left: 20px;
+    }
+
+    .button {
+        margin-left: 20px;
+    }
+
+    .summaryContent {
+        padding-top: 70px;
+    }
+
+    .rightBrief {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .infoCard {
+        margin-top: 20px;
+    }
+}
+
+/* ==========***===========
+New CSS
+==========***=========== */
+
+.moreProjectsWrapper {
+    width: 90%;
+    margin: auto;
+    padding-left: 7.5vw;
+    margin-right: 34.5vw !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.moreProjectsWrapper h2 {
+    font-family: 'Space mono';
+    font-size: 36px;
+    color: var(--mainColor);
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.moreProjectsTable table {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.moreProjectsTable table tr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--mainColor);
+    border-collapse: collapse;
+    transition: 500ms all linear;
+}
+
+.moreProjectsTable table tr:hover {
+  background: var(--mainColor);
+}
+
+.moreProjectsTable table tr:hover td {
+    color: white;
+  }
+
+.moreProjectsTable table tr td.title {
+    font-family: 'Space Mono';
+    font-size: 22px;
+}
+
+.moreProjectsTable table tr td {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--mainColor);
+    padding: 20px 0;
+}
+
+.main footer {
+    z-index: 999;
+}
+
+/* ===========***============
+Responsive CSS
+===========***============ */
+
+/* Min Width 1200px and Max Width 1399px */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    #projDescriptionInverse,
+    #projDescription {
+        min-height: auto;
+        padding: 30px 0;
+    }
+
+    .moreProjectsWrapper {
+        width: 95%;
+    }
+}
+
+/* Min Width 992px and Max Width 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #projDescriptionInverse,
+    #projDescription {
+        min-height: auto;
+        padding: 30px 0;
+    }
+
+    .moreProjectsWrapper {
+        width: 100%;
+    }
+
+    #context h1 {
+        font-size: 65px;
+    }
+
+    #context h2 {
+        font-size: 55px;
+    }
+
+    #summary h1,
+    #projDescriptionInverse .projDescriptionRight h1,
+    #projDescription .projDescriptionRight h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
+/* Min Width 768px and Max Width 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #projDescriptionInverse,
+    #projDescription {
+        min-height: auto;
+        padding: 30px 0;
+    }
+
+    .moreProjectsWrapper {
+        width: 100%;
+    }
+
+    #context h1 {
+        font-size: 55px;
+    }
+
+    #context h2 {
+        font-size: 45px;
+    }
+
+    #summary h1,
+    #projDescriptionInverse .projDescriptionRight h1,
+    #projDescription .projDescriptionRight h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .moreProjectsTable table {
+        width: 92%;
+    }
+}
+
+/* Min Width 300px and Max Width 767px */
+
+@media (min-width: 300px) and (max-width: 767px) {
+
+    #projDescriptionInverse,
+    #projDescription {
+        min-height: auto;
+        padding: 30px 0;
+        flex-direction: column;
+    }
+
+    .moreProjectsWrapper {
+        width: 95%;
+        margin: 0;
+    }
+
+    #context h1 {
+        font-size: 42px;
+    }
+
+    #context h2 {
+        font-size: 30px;
+    }
+
+    #summary h1,
+    #projDescriptionInverse .projDescriptionRight h1,
+    #projDescription .projDescriptionRight h1 {
+        font-size: 17px;
+        line-height: 31px;
+        width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .more-projects-table table {
+        width: 92%;
+    }
+
+    #viewport {
+        /* height: 50vh; */
+    }
+
+    .innerViewport {
+        width: 90vw;
+    }
+
+    .projDescriptionLeft {
+        margin-left: 0;
+    }
+
+    #projDescriptionInverse .projDescriptionLeft h1,
+    .projDescriptionLeft h1 {
+        font-size: 36px;
+        line-height: 45px;
+        padding-bottom: 20px;
+    }
+
+    .moreProjectsWrapper h2 {
+        font-size: 30px;
+    }
+
+    .moreProjectsTable table tr td.title {
+        font-size: 20px;
+    }
+
+    .moreProjectsTable table tr td {
+        font-size: 18px;
+    }
+
+    .main footer p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .innerViewport {
+        width: 100%;
+    }
+}
+
+.nextjs-toast-errors-parent {
+    display: none !important;
+  }
