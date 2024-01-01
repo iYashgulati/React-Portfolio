@@ -558,7 +558,7 @@ Responsive CSS
     #summary h1,
     #projDescriptionInverse .projDescriptionRight h1,
     #projDescription .projDescriptionRight h1 {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 35px;
     }
 }
@@ -588,7 +588,7 @@ Responsive CSS
     #summary h1,
     #projDescriptionInverse .projDescriptionRight h1,
     #projDescription .projDescriptionRight h1 {
-        font-size: 28px;
+        font-size: 16px;
         line-height: 35px;
     }
 
@@ -606,6 +606,10 @@ Responsive CSS
         min-height: auto;
         padding: 30px 0;
         flex-direction: column;
+    }
+
+    .moreProjectsTable {
+        width: 100%;
     }
 
     .moreProjectsWrapper {
@@ -632,8 +636,8 @@ Responsive CSS
         padding: 0 20px;
     }
 
-    .more-projects-table table {
-        width: 92%;
+    .moreProjectsTable table {
+        width: 100%;
     }
 
     #viewport {
