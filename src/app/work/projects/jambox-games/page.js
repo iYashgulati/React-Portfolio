@@ -114,7 +114,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* <section id={styles.moreprojects}>
+            <section id={styles.moreprojects}>
                 <div className={styles.moreProjectsWrapper}>
                     <h2>More Projects</h2>
                     <div className={styles.moreProjectsTable}>
@@ -125,7 +125,7 @@ export default function Home() {
                                 <a href={'/work/projects/cosmonats'}>
                                     <tr>
                                         <td className={styles.title}>Cosmonats</td>
-                                        <td>NFT Game</td>
+                                        <td className={styles.midColumn}>NFT Game</td>
                                         <td>2023</td>
                                     </tr>
                                 </a>
@@ -135,7 +135,7 @@ export default function Home() {
                                 <a href={'/work/projects/taeger-art'}>
                                     <tr>
                                         <td className={styles.title}>Taeger.art</td>
-                                        <td>Portfolio</td>
+                                        <td className={styles.midColumn}> Artist Portfolio</td>
                                         <td>2023</td>
                                     </tr>
                                 </a>
@@ -145,27 +145,27 @@ export default function Home() {
                                 <a href={'/work/projects/tiger-princess-club'}>
                                     <tr>
                                         <td className={styles.title}>Tiger Princess NFT</td>
-                                        <td>NFT Club</td>
+                                        <td className={styles.midColumn}>NFT Club</td>
                                         <td>2022</td>
                                     </tr>
                                 </a>
                                 </div>
 
                                 <div>
-                                <a href={'#'}>
+                                <a href={'/work/projects/terminal-charging'}>
                                     <tr>
-                                        <td className={styles.title}>SportApp</td>
-                                        <td>Fitlife</td>
-                                        <td>2023</td>
+                                        <td className={styles.title}>Terminal Charging</td>
+                                        <td className={styles.midColumn}>EV Startup</td>
+                                        <td>2022</td>
                                     </tr>
                                 </a>
                                 </div>
 
                                 <div>
-                                <a href={'#'}>
+                                <a href={'/work/projects/octavo-press'}>
                                     <tr>
-                                        <td className={styles.title}>SportApp</td>
-                                        <td>Fitlife</td>
+                                        <td className={styles.title}>Octavo Press</td>
+                                        <td className={styles.midColumn}>Book Publishing</td>
                                         <td>2023</td>
                                     </tr>
                                 </a>
@@ -178,7 +178,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
             <Footer></Footer>
         </main>
 

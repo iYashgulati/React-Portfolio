@@ -488,6 +488,13 @@ New CSS
     border-bottom: 1px solid var(--mainColor);
     border-collapse: collapse;
     transition: 500ms all linear;
+    position: relative;
+}
+
+.moreProjectsTable .midColumn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .moreProjectsTable table tr:hover {
@@ -497,6 +504,11 @@ New CSS
 .moreProjectsTable table tr:hover td {
     color: white;
   }
+
+  .more-projects-table table tr td:last-child {
+    text-align: right;
+  }
+  
 
 .moreProjectsTable table tr td.title {
     font-family: 'Space Mono';
@@ -681,12 +693,17 @@ Responsive CSS
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 565px) {
     .innerViewport {
         width: 100%;
+    }   
+    .midColumn {
+        display: none;
     }
 }
+
 
 .nextjs-toast-errors-parent {
     display: none !important;
   }
+

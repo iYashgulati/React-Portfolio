@@ -113,54 +113,67 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section id={styles.moreprojects}>
+      <section id={styles.moreprojects}>
         <div className={styles.moreProjectsWrapper}>
           <h2>More Projects</h2>
           <div className={styles.moreProjectsTable}>
             <table>
               <tbody>
-                <a href={'#'}>
-                  <tr>
-                    <td className={styles.title}>SportApp</td>
-                    <td>Fitlife</td>
-                    <td>2023</td>
-                  </tr>
-                </a>
-                <a href={'#'}>
-                  <tr>
-                    <td className={styles.title}>SportApp</td>
-                    <td>Fitlife</td>
-                    <td>2023</td>
-                  </tr>
-                </a>
-                <a href={'#'}>
-                  <tr>
-                    <td className={styles.title}>SportApp</td>
-                    <td>Fitlife</td>
-                    <td>2023</td>
-                  </tr>
-                </a>
+              <div>
+                                <a href={'/work/projects/jambox-games'}>
+                                    <tr>
+                                        <td className={styles.title}>Jambox Games</td>
+                                        <td className={styles.midColumn}>Game Publisher</td>
+                                        <td>2023</td>
+                                    </tr>
+                                </a>
+                                </div>
 
-                <a href={'#'}>
-                  <tr>
-                    <td className={styles.title}>SportApp</td>
-                    <td>Fitlife</td>
-                    <td>2023</td>
-                  </tr>
-                </a>
-                <a href={'#'}>
-                  <tr>
-                    <td className={styles.title}>SportApp</td>
-                    <td>Fitlife</td>
-                    <td>2023</td>
-                  </tr>
-                </a>
+                                <div>
+                                <a href={'/work/projects/cosmonats'}>
+                                    <tr>
+                                        <td className={styles.title}>Cosmonats</td>
+                                        <td className={styles.midColumn}>NFT Game</td>
+                                        <td>2023</td>
+                                    </tr>
+                                </a>
+                                </div>
+                                <div>
+                                <a href={'/work/projects/taeger-art'}>
+                                    <tr>
+                                        <td className={styles.title}>Taeger.Art</td>
+                                        <td className={styles.midColumn}>Artist Portfolio</td>
+                                        <td>2023</td>
+                                    </tr>
+                                </a>
+                                </div>
+                                <div>
+                                <a href={'/work/projects/octavo-press'}>
+                                    <tr>
+                                        <td className={styles.title}>Octavo Press</td>
+                                        <td className={styles.midColumn}>Book Publishing</td>
+                                        <td>2022</td>
+                                    </tr>
+                                </a>
+                                </div>
+
+                                <div>
+                                <a href={'/work/projects/tiger-princess-club'}>
+                                    <tr>
+                                        <td className={styles.title}>Tiger Princess NFT</td>
+                                        <td className={styles.midColumn}>NFT Club</td>
+                                        <td>2022</td>
+                                    </tr>
+                                </a>
+                                </div>
+
+
 
               </tbody>
             </table>
           </div>
         </div>
-      </section> */}
+      </section>
       <Footer></Footer>
     </main>
   )
