@@ -8,7 +8,7 @@ export default function Home() {
       <div className={workStyles.singleWorkWrapper}>
         <div className={workStyles.singleWorkContainer}>
           <div className={workStyles.singleWorkNumber}>
-            <h1>03</h1>
+            <h1>04</h1>
           </div>
           <div className={workStyles.workCardImg}>
             <img
@@ -21,10 +21,8 @@ export default function Home() {
             </div>
             <div className={workStyles.workCardDesc}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-                voluptatum quas ea doloremque labore a cupiditate nobis odit aut velit
-                exercitationem obcaecati amet magnam sapiente corporis quasi quaerat.
-                Corporis, quos!
+              Own your power, paint your roar! Tiger Princess NFT Club ignites female empowerment with unique, collectible tigers on the blockchain, each a digital tribute to courage, resilience, and strength. Invest in individuality, fuel change, and roar with a community that champions women as leaders.
+
               </p>
             </div>
             <div className={workStyles.workCardInfo}>
@@ -34,7 +32,7 @@ export default function Home() {
                     <h6>Role</h6>
                   </div>
                   <div className={workStyles.projectInfoRight}>
-                    <p>Product Designer</p>
+                    <p>Product Manager</p>
                   </div>
                 </div>
                 <div className={workStyles.projectInfo}>
@@ -42,7 +40,7 @@ export default function Home() {
                     <h6>Project</h6>
                   </div>
                   <div className={workStyles.projectInfoRight}>
-                    <p>Website Redesign</p>
+                    <p>Website Designer</p>
                   </div>
                 </div>
                 <div className={workStyles.projectInfo}>
@@ -50,7 +48,7 @@ export default function Home() {
                     <h6>Year</h6>
                   </div>
                   <div className={workStyles.projectInfoRight}>
-                    <p>2022 - 2023</p>
+                    <p>2021</p>
                   </div>
                 </div>
               </div>

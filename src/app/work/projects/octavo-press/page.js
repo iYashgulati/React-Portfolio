@@ -47,10 +47,7 @@ export default function Home() {
         <div className={styles.summaryContent}>
           <div className={styles.leftBrief}>
             <h1>
-              Started by a <span className={styles.bold}>young author,</span> Octavo
-              Press looks to publish <span className={styles.bold}>nail-biting
-                books</span> which are enjoyable for all reading ages.
-            </h1>
+             Stories, woven with vibrant diversity and emotional complexity, ignite imaginations and challenge young heroes within. Delve into worlds where your hearts skip beats and every page whispers, "Grow a little taller, dream a little wilder."</h1>
           </div>
 
           <div className={styles.rightBrief}>
@@ -94,38 +91,28 @@ export default function Home() {
         <div id={styles.projDescriptionInverse}>
           <div className={styles.projDescriptionLeft}>
             <h1>
-              The<br />
-              Problem
+              The Problem
             </h1>
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Children's books often fall into predictable tropes, offering bland tales that fail to spark genuine curiosity and ignite imaginations. Bland heroes, cookie-cutter plots, and formulaic narratives leave youngsters longing for stories that truly resonate with their adventurous spirit and diverse experiences. Where are the heroes that reflect their own complexities, the worlds that challenge and inspire, and the adventures that leave them begging for more?</h1>
           </div>
         </div>
         <div id={styles.projDescription}>
           <div className={styles.projDescriptionLeft}>
             <h1>
-              The<br />
-              Solution
+              The Solution
             </h1>
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Octavo Press rewrites the story of childhood reading. We craft captivating, multi-layered children's books that crackle with emotional depth, celebrate cultural diversity, and ignite young minds like a fantastical spark. Our heroes are relatable yet extraordinary, facing thrilling challenges that mirror the complexities of growing up. In Octavo Press stories, vibrant worlds blossom with hidden secrets, unexpected twists keep hearts pounding, and every page invites curiosity to unfurl. We don't just tell bedtime tales, we ignite lifelong journeys of reading, growth, and endless possibilities.</h1>
           </div>
         </div>
       </section>
 
-      <section id={styles.moreprojects}>
+      {/* <section id={styles.moreprojects}>
         <div className={styles.moreProjectsWrapper}>
           <h2>More Projects</h2>
           <div className={styles.moreProjectsTable}>
@@ -172,7 +159,7 @@ export default function Home() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer></Footer>
     </main>
   )

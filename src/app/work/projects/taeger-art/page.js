@@ -46,10 +46,7 @@ export default function Home() {
         <div className={styles.summaryContent}>
           <div className={styles.leftBrief}>
             <h1>
-              A distinctive portfolio for a
-              <span className={styles.bold}>talented artist</span> based in Florida
-              looking to get his <span className={styles.bold}>unique paintings</span>
-              in every house and office space in the city
+            New York’s heartbeat, splashed on canvas. Own stunning paintings bursting with New York spirit, discover hidden gems before they shine. Discover the energy of NYC, brushstroke at a time.
             </h1>
           </div>
           <div className={styles.rightBrief}>
@@ -100,11 +97,7 @@ export default function Home() {
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Aspiring artists often face an uphill battle. Galleries are crowded, online spaces oversaturated, and breaking through the noise feels impossible. Lack of exposure leaves talented creators struggling to gain recognition and build a sustainable career. Traditional art-buying channels cater to established names, leaving emerging artists in the shadows.</h1>
           </div>
         </div>
         <div id={styles.projDescription}>
@@ -115,15 +108,11 @@ export default function Home() {
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Taeger.art empowers the next generation of emerging artistic. By showcasing vibrant, bold paintings on a hyper-local platform focused on New York City, this initiative connects directly with potential buyers within their own artistic ecosystem. Artists find dedicated fans and collectors, while art lovers discover fresh perspectives and invest in the future of NYC's creative landscape.</h1>
           </div>
         </div>
       </section>
-      <section id={styles.moreprojects}>
+      {/* <section id={styles.moreprojects}>
         <div className={styles.moreProjectsWrapper}>
           <h2>More Projects</h2>
           <div className={styles.moreProjectsTable}>
@@ -170,7 +159,7 @@ export default function Home() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer></Footer>
     </main>
   )

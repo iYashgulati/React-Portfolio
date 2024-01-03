@@ -18,10 +18,10 @@ export default function Home() {
         <Navbar></Navbar>  
         <Jambox></Jambox>
         <Cosmonats></Cosmonats>
+        <Taeger></Taeger>
         <TPC></TPC>
         <TC></TC>
         <Octavo></Octavo>
-        <Taeger></Taeger>
         <br></br>
         <br></br>
         <Footer></Footer>

@@ -48,12 +48,7 @@ export default function Home() {
         <div className={styles.summaryContent}>
           <div className={styles.leftBrief}>
             <h1>
-              With all the new hype around cryptos and NFTs,
-              <span className={styles.bold}>Cosmonats</span> aims to break into the
-              space by launching a stellar<span className={styles.bold}> NFT
-                Game.</span> The startup launched in January 2023 and is already on
-              path to <span className={styles.bold}>publish their game</span> in the
-              near future.
+            Transcend the mundane, ignite your ambition. Forge your legend in the crucible of player-driven empires and dynamic NFT ownership. Craft your interstellar avatar, a testament to your unique spirit, and command a fleet forged from ambition.
             </h1>
           </div>
           <div className={styles.rightBrief}>
@@ -104,11 +99,9 @@ export default function Home() {
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Space games often relegate ownership and meaningful impact to developers, leaving players adrift in a pre-rendered universe. Grinding for fleeting rewards and navigating pre-written narratives can feel unrewarding, leaving the vast potential of space unfulfilled. Players crave true ownership, a stake in the cosmos, and the power to etch their story into the celestial tapestry.
+
+</h1>
           </div>
         </div>
         <div id={styles.projDescription}>
@@ -119,15 +112,13 @@ export default function Home() {
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Cosmonats transcends the bounds of traditional space games, beginning a new era of player-driven exploration powered by NFTs. Forge a one-of-a-kind avatar, own your interstellar assets, and conquer uncharted planets – all fueled by blockchain technology. Every decision echoes in the fabric of reality, shaping the fate of your empire and the very fabric of the frontier. In Cosmonats, the universe is no longer a playground, it's your canvas, your conquest, your NFT-empowered odyssey.
+
+</h1>
           </div>
         </div>
       </section>
-      <section id={styles.moreprojects}>
+      {/* <section id={styles.moreprojects}>
         <div className={styles.moreProjectsWrapper}>
           <h2>More Projects</h2>
           <div className={styles.moreProjectsTable}>
@@ -174,7 +165,7 @@ export default function Home() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer></Footer>
     </main>
   )

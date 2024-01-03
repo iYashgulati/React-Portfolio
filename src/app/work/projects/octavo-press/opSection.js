@@ -8,7 +8,7 @@ export default function Home() {
       <div className={workStyles.singleWorkWrapper}>
         <div className={workStyles.singleWorkContainer}>
           <div className={workStyles.singleWorkNumber}>
-            <h1>05</h1>
+            <h1>06</h1>
           </div>
           <div className={workStyles.workCardImg}>
             <img
@@ -21,10 +21,8 @@ export default function Home() {
             </div>
             <div className={workStyles.workCardDesc}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-                voluptatum quas ea doloremque labore a cupiditate nobis odit aut velit
-                exercitationem obcaecati amet magnam sapiente corporis quasi quaerat.
-                Corporis, quos!
+              Open a book, open your mind. Octavo Press crafts captivating, multilayered children's stories that ignite curiosity, nurture empathy, and leave little readers hungry for more. It's more than just reading, it's an expedition into imagination.
+
               </p>
             </div>
             <div className={workStyles.workCardInfo}>
@@ -42,7 +40,7 @@ export default function Home() {
                     <h6>Project</h6>
                   </div>
                   <div className={workStyles.projectInfoRight}>
-                    <p>Website Redesign</p>
+                    <p>Website Designer</p>
                   </div>
                 </div>
                 <div className={workStyles.projectInfo}>
@@ -50,7 +48,7 @@ export default function Home() {
                     <h6>Year</h6>
                   </div>
                   <div className={workStyles.projectInfoRight}>
-                    <p>2022 - 2023</p>
+                    <p>2022</p>
                   </div>
                 </div>
               </div>

@@ -46,8 +46,7 @@ export default function Home() {
         <div className={styles.summaryContent}>
           <div className={styles.leftBrief}>
             <h1>
-              Another project in the hot space of <span className={styles.bold}>cryptos and NFTS,</span> this unique NFT club aims to provide unparalleled utility for its holders and also support the calls for <span className={styles.bold}>womens rights</span> all around the world.
-            </h1>
+            Beyond trends and hashtags, Tiger Princess Club ignites a digital sisterhood of empowered women. Own a unique, NFT-forged tiger, a testament to your strength, diversity, and defiant spirit. Join the movement and leave paw prints on the world - one fierce tiger at a time.            </h1>
           </div>
           <div className={styles.rightBrief}>
             <div className={styles.infoCard}>
@@ -97,11 +96,7 @@ export default function Home() {
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Women's empowerment often gets lost in buzzwords and empty symbolism. Existing initiatives can feel exclusionary, lacking diversity and true depth. Many women crave a sense of belonging, a celebration of their unique strengths, and a platform to inspire each other. Where can they find their roar, connect with like-minded souls, and leave a lasting impact?</h1>
           </div>
         </div>
         <div id={styles.projDescription}>
@@ -112,15 +107,13 @@ export default function Home() {
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Tiger Princess Club ignites a revolution of female power. Through stunning, diverse tiger-themed NFTs, it creates a vibrant digital community where women of all backgrounds unite under the banner of courage, resilience, and strength. Owning a Tiger NFT isn't just collecting art, it's joining a movement. Members gain access to exclusive events, mentorship programs, and philanthropic initiatives, empowering each other to roar louder and leave paw prints on the world. Tiger Princess Club transforms online connections into real-world action, fostering a sisterhood that shatters glass ceilings and rewrites the narrative of female empowerment.
+
+</h1>
           </div>
         </div>
       </section>
-      <section id={styles.moreprojects}>
+      {/* <section id={styles.moreprojects}>
         <div className={styles.moreProjectsWrapper}>
           <h2>More Projects</h2>
           <div className={styles.moreProjectsTable}>
@@ -167,7 +160,7 @@ export default function Home() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer></Footer>
 
     </main>

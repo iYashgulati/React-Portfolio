@@ -21,10 +21,7 @@ export default function Home() {
             </div>
             <div className={workStyles.workCardDesc}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-                voluptatum quas ea doloremque labore a cupiditate nobis odit aut velit
-                exercitationem obcaecati amet magnam sapiente corporis quasi quaerat.
-                Corporis, quos!
+              Go social, get competitive. Jambox Games cracks open the world of hypercasual to real-time multiplayer. Blast through levels, outsmart rivals, and rule the leaderboard in bite-sized bursts of adrenaline. Multiplayer mayhem, pocket-sized fun.
               </p>
             </div>
             <div className={workStyles.workCardInfo}>
@@ -42,7 +39,7 @@ export default function Home() {
                     <h6>Project</h6>
                   </div>
                   <div className={workStyles.projectInfoRight}>
-                    <p>Website Redesign</p>
+                    <p>Website Designer </p>
                   </div>
                 </div>
                 <div className={workStyles.projectInfo}>
@@ -50,7 +47,7 @@ export default function Home() {
                     <h6>Year</h6>
                   </div>
                   <div className={workStyles.projectInfoRight}>
-                    <p>2022 - 2023</p>
+                    <p>2023</p>
                   </div>
                 </div>
               </div>

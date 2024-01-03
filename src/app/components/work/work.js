@@ -24,7 +24,7 @@ export default function Home() {
                             <div className={styles.workCardRight}>
                                 <h3>Featured Project</h3>
                                 <h2>Jambox Games</h2>
-                                <p>Jambox Games is an upcoming gaming company looking to enable multiplayer technology in hypercasual games for developers in SEA.</p>
+                                <p>Jambox Games, the rising star in the gaming industry, aims to empower Southeast Asian developers by bringing multiplayer technology to the world of hypercasual games. </p>
                             </div>
 
                             <div className={styles.workCardImg}>
@@ -35,7 +35,7 @@ export default function Home() {
                             <div className={styles.workCardRight} id={styles.rightV2}>
                                 <h3>Featured Project</h3>
                                 <h2>Tiger Princess NFT</h2>
-                                <p>Tiger Princess Club is a new NFT club. Their aim is to provide amazing party benefits for holders of the new NFT.</p>
+                                <p>Join the latest NFT sensation! Unlock exclusive party perks for holders of cutting-edge, woman empowered NFTs. </p>
                             </div>
                             <div className={styles.workCardLeft} id={styles.workTwo}>
                             </div>
@@ -49,7 +49,7 @@ export default function Home() {
                             <div className={styles.workCardRight}>
                                 <h3>Featured Project</h3>
                                 <h2>Terminal Charging</h2>
-                                <p>Terminal Charging is a startup looking to simplify electric vehicle charging. Their aim is to make it more accessible and cheaper for the average consumer.</p>
+                                <p>Terminal Charging, a pioneering startup, is on a mission to streamline the electric vehicle charging experience, making it more affordable and accessible for everyday consumers. </p>
                             </div>
                             <div className={styles.workCardImg}>
                                 <img src={shape041} alt=""></img>

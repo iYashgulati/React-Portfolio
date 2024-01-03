@@ -23,8 +23,8 @@ export default function Home() {
 			<div class={styles.aboutContent}>
 				<div class={styles.aboutLeft}>
 					<h5> About Me </h5>
-					<h1>A young, passionate developer, looking to spread his influence.</h1>
-					<p >Hello! I'm Yash and I'm a passionate web developer with more than 5 years of experience under my belt. My love for creating and developing has been with me throughout my life, even before I ever learned to code. Fast forward to today, I relish helping people achieve their goals and dreams!					</p>
+					<h1>Building Dreams with Bits and Bytes.</h1>
+					<p >I am Yash, a dedicated web developer with a robust background spanning over 5 years. My passion for creation and development has been a lifelong companion, predating my initiation into coding. Today, I aquire immense satisfaction from assisting individuals with their goals and dreams.</p>
 					<a href={'https://www.fiverr.com/yash2007'}>Check Me Out On Fiverr</a>
 				</div>
 

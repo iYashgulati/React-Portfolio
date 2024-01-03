@@ -47,10 +47,7 @@ export default function Home() {
         <div className={styles.summaryContent}>
           <div className={styles.leftBrief}>
             <h1>
-              With the ongoing climate crisis the world is facing,
-              <span className={styles.bold}>Terra Energy</span> looks to make a move
-              toward a <span className={styles.bold}>greener future</span> by
-              creating top-notch EV charging all around the country.
+            Terminal Charging disrupts the electric landscape, placing fast, reliable chargers where you truly live – integrated seamlessly into your daily routines. Ditch detours, reclaim freedom, and experience electric mobility recharged, one convenient kilowatt at a time.
             </h1>
           </div>
           <div className={styles.rightBrief}>
@@ -101,11 +98,7 @@ export default function Home() {
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            EV range anxiety remains a persistent roadblock. Limited charging infrastructure, inconvenient locations, and unreliable performance leave drivers feeling tethered to specific routes and schedules. The charging experience itself can be clunky, time-consuming, and often lacks integration with everyday destinations. This stifles EV adoption and limits the true potential of clean transportation.</h1>
           </div>
         </div>
         <div id={styles.projDescription}>
@@ -116,15 +109,11 @@ export default function Home() {
           </div>
           <div className={styles.projDescriptionRight}>
             <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur dignissimos temporibus pariatur, id laboriosam animi
-              magnam minus non voluptates vitae possimus voluptate voluptatum qui
-              reprehenderit autem beatae fugit, vel nam!
-            </h1>
+            Terminal Charging recharges the future of electric mobility. We bring fast, reliable chargers directly to the places you already visit, like grocery stores, gyms, and shopping malls. No more detours, just seamless top-ups while you run errands or grab a coffee. Our intuitive platform simplifies the charging process and keeps you informed, eliminating anxiety and maximizing convenience. With Terminal Charging, electric cars become truly liberating, seamlessly woven into the fabric of your daily life.</h1>
           </div>
         </div>
       </section>
-      <section id={styles.moreprojects}>
+      {/* <section id={styles.moreprojects}>
         <div className={styles.moreProjectsWrapper}>
           <h2>More Projects</h2>
           <div className={styles.moreProjectsTable}>
@@ -171,7 +160,7 @@ export default function Home() {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer></Footer>
     </main>
   )

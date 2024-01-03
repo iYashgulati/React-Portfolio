@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .dotted {
-    --dotSize: 0.04rem;
+    --dotSize: 0.06rem;
     position: absolute;
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.346) var(--dotSize), transparent 0);
     background-size: 1.35rem 1.35rem;

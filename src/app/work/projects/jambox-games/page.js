@@ -45,11 +45,7 @@ export default function Home() {
                 <div className={styles.summaryContent}>
                     <div className={styles.leftBrief}>
                         <h1>
-                            Another project in the hot space of
-                            <span className={styles.bold}>cryptos and NFTS, </span> this unique NFT club
-                            aims to provide unparalleled utility for its holders and also
-                            support the calls for <span className={styles.bold}>womensRights</span> all
-                            around the world.
+                         Jambox Games transcends the hypercasual horizon, infusing them with strategic real-time multiplayer. No more bots, no more monotony. Welcome to the future of hypercasual, where every tap fuels the thrill of victory.
                         </h1>
                     </div>
                     <div className={styles.rightBrief}>
@@ -66,7 +62,7 @@ export default function Home() {
                                 Project Role
                                 <div className={styles.cardLine} />
                             </h3>
-                            <h2>Development Manager</h2>
+                            <h2>UI Design & Development</h2>
                         </div>
 
                         <div className={styles.infoCard}>
@@ -74,7 +70,7 @@ export default function Home() {
                                 Year
                                 <div className={styles.cardLine} />
                             </h3>
-                            <h2>2022</h2>
+                            <h2>2023</h2>
                         </div>
                     </div>
                 </div>
@@ -100,10 +96,7 @@ export default function Home() {
                     </div>
                     <div className={styles.projDescriptionRight}>
                         <h1>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Consectetur dignissimos temporibus pariatur, id laboriosam animi
-                            magnam minus non voluptates vitae possimus voluptate voluptatum qui
-                            reprehenderit autem beatae fugit, vel nam!
+                        Mobile hypercasual games often fall flat due to their solitary nature. Simple mechanics and repetitive gameplay lead to boredom and disengagement. Players crave deeper connections and a sense of achievement beyond individual high scores. Social elements and long-term goals are virtually absent, turning these games into fleeting distractions rather than engaging experiences.
                         </h1>
                     </div>
                 </div>
@@ -115,16 +108,13 @@ export default function Home() {
                     </div>
                     <div className={styles.projDescriptionRight}>
                         <h1>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Consectetur dignissimos temporibus pariatur, id laboriosam animi
-                            magnam minus non voluptates vitae possimus voluptate voluptatum qui
-                            reprehenderit autem beatae fugit, vel nam!
+                        Jambox Games injects adrenaline into hypercasuals by introducing real-time multiplayer features. Imagine racing through levels with friends, strategizing against rivals, and dominating leaderboards. With Jambox Games, hypercasuals evolve from solo playgrounds to vibrant social arenas, transforming bite-sized fun into epic multiplayer adventures.
                         </h1>
                     </div>
                 </div>
             </section>
 
-            <section id={styles.moreprojects}>
+            {/* <section id={styles.moreprojects}>
                 <div className={styles.moreProjectsWrapper}>
                     <h2>More Projects</h2>
                     <div className={styles.moreProjectsTable}>
@@ -132,31 +122,31 @@ export default function Home() {
                         <table>
                             <tbody>
                                 <div>
-                                <a href={'#'}>
+                                <a href={'/work/projects/cosmonats'}>
                                     <tr>
-                                        <td className={styles.title}>SportApp</td>
-                                        <td>Fitlife</td>
+                                        <td className={styles.title}>Cosmonats</td>
+                                        <td>NFT Game</td>
                                         <td>2023</td>
                                     </tr>
                                 </a>
                                 </div>
 
                                 <div>
-                                <a href={'#'}>
+                                <a href={'/work/projects/taeger-art'}>
                                     <tr>
-                                        <td className={styles.title}>SportApp</td>
-                                        <td>Fitlife</td>
+                                        <td className={styles.title}>Taeger.art</td>
+                                        <td>Portfolio</td>
                                         <td>2023</td>
                                     </tr>
                                 </a>
                                 </div>
 
                                 <div>
-                                <a href={'#'}>
+                                <a href={'/work/projects/tiger-princess-club'}>
                                     <tr>
-                                        <td className={styles.title}>SportApp</td>
-                                        <td>Fitlife</td>
-                                        <td>2023</td>
+                                        <td className={styles.title}>Tiger Princess NFT</td>
+                                        <td>NFT Club</td>
+                                        <td>2022</td>
                                     </tr>
                                 </a>
                                 </div>
@@ -188,7 +178,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <Footer></Footer>
         </main>
 
