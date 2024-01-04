@@ -1,10 +1,9 @@
 import { Inter } from 'next/font/google'
-import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Home | Yash Gulati',
+  title: 'Taeger.Art | Yash Gulati',
 }
 
 export default function RootLayout({ children }) {
