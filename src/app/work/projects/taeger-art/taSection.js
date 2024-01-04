@@ -12,7 +12,7 @@ export default function Home() {
           </div>
           <div className={workStyles.workCardImg}>
             <img
-              src="/img/workImg/taWorkSection.png" alt="Taeger Art"
+              src="/img/mockup-bg/taeger.jpg" alt="Taeger Art"
             />
           </div>
           <div className={workStyles.workCardContentContainer}>

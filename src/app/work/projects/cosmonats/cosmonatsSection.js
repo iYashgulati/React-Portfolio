@@ -12,7 +12,7 @@ export default function Home() {
           </div>
           <div className={workStyles.workCardImg} id={workStyles.workCardImg1}>
             <img
-              src="/img/workImg/cosmonatsWorkSection.png" alt="Cosmonats"
+              src="/img/mockup-bg/cosmo.jpg" alt="Cosmonats"
             />
           </div>
           <div className={workStyles.workCardContentContainer}>

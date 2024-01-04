@@ -12,7 +12,7 @@ export default function Home() {
           </div>
           <div className={workStyles.workCardImg}>
             <img
-              src="/img/workImg/opWorkSection.png" alt="Octavo Press"
+              src="/img/mockup-bg/octavo.jpg" alt="Octavo Press"
             />
           </div>
           <div className={workStyles.workCardContentContainer}>

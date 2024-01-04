@@ -12,7 +12,7 @@ export default function Home() {
           </div>
           <div className={workStyles.workCardImg}>
             <img
-              src="/img/workImg/tcWorkSection.png" alt="Terminal Charging"
+              src="/img/mockup-bg/tc.jpg" alt="Terminal Charging"
             />
           </div>
           <div className={workStyles.workCardContentContainer}>

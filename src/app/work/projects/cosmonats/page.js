@@ -83,7 +83,7 @@ export default function Home() {
         <section id={styles.viewport}>
           <div className={styles.innerViewport}>
             <img
-              src="/img/workImg/cosmonatsWorkSection.png"
+              src="/img/workImg/cosmonatsWorkSection.jpg"
               alt=""
             />
           </div>

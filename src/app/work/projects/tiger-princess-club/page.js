@@ -80,7 +80,7 @@ export default function Home() {
         <section id={styles.viewport}>
           <div className={styles.innerViewport}>
             <img
-              src="/img/workImg/tpcWorkSection.png"
+              src="/img/workImg/tpcWorkSection.jpg"
               alt=""
             />
           </div>

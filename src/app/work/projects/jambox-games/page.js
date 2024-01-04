@@ -80,7 +80,7 @@ export default function Home() {
                 <section id={styles.viewport}>
                     <div className={styles.innerViewport}>
                         <img
-                            src="/img/workImg/jamboxWorkSection.png"
+                            src="/img/workImg/jamboxWorkSection.jpg"
                             alt=""
                         />
                     </div>

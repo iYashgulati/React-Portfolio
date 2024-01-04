@@ -12,7 +12,7 @@ export default function Home() {
           </div>
           <div className={workStyles.workCardImg}>
             <img
-              src="/img/workImg/jamboxWorkSection.png" alt="jambox"
+              src="/img/mockup-bg/jambox.jpg" alt="jambox"
             />
           </div>
           <div className={workStyles.workCardContentContainer}>

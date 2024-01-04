@@ -12,7 +12,7 @@ export default function Home() {
           </div>
           <div className={workStyles.workCardImg}>
             <img
-              src="/img/workImg/tpcWorkSection.png" alt="Tiger Princess NFT Club"
+              src="/img/mockup-bg/tpc.jpg" alt="Tiger Princess NFT Club"
             />
           </div>
           <div className={workStyles.workCardContentContainer}>
