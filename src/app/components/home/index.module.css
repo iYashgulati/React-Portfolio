@@ -1,16 +1,13 @@
 .dotted {
     --dotSize: 0.06rem;
-    position: relative;
+    position: absolute;
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.346) var(--dotSize), transparent 0);
     background-size: 1.35rem 1.35rem;
     background-repeat: round;
     background-position: center;
     width: 100vw;
-    height: 800px;
+    height: 100%;
     z-index: -1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, min(400px, 100%));
-    gap: 1.25rem;
 }
 
 
@@ -44,13 +41,37 @@
     opacity: 0.8;
 }
 
+#btsHome {
+    padding-top: 70px;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#btsHome::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 300px;
+    height: 150px;
+    background-image: url('/img/logo/PNG-02.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.03;
+    filter: grayscale(100%) brightness(0);
+    pointer-events: none;
+    z-index: 0;
+}
+
 .homeContent {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 100vw;
-    height: 800px;
+    min-height: calc(100vh - 70px);
     position: absolute;
     top: 0;
     font-family: 'Poppins';
@@ -61,22 +82,30 @@
 }
 
 .homeLeft {
-    width: 49%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     margin-left: 8%;
 }
 
+.homeLeft h1 {
+    font-weight: 800;
+    letter-spacing: -3px;
+}
 
 .homeLeft h2 {
-    font-size: 23px;
-    line-height: 1.1em;
-    color: #f1f1f1;
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #9ab9ef;
     margin-top: 0;
     width: 95%;
-    font-family: 'Space Mono';
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 600;
     margin-top: 30px;
+    margin-bottom: 0;
 }
 
 .homeRight {
@@ -103,7 +132,7 @@
 @media screen and (max-width: 838px) {
     .homeLeft h1{
         font-size: 58px;
-    }   
+    }
     .homeRight{
         width: 0;
     }
@@ -111,16 +140,151 @@
 
 @media screen and (max-width: 768px) {
     .homeLeft h1{
-        font-size: 53px;
-    }   
+        font-size: 48px;
+    }
     .homeLeft h2{
-        font-size: 20px;
-    }   
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+    .homeLeft {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 630px) {
     .homepageImg3 {
         bottom: -50%;
         right: auto;
+    }
+}
+
+/* Entrance Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-20px) rotate(2deg);
+    }
+    66% {
+        transform: translateY(-10px) rotate(-2deg);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.8;
+        filter: blur(40px) brightness(0.8);
+    }
+    50% {
+        opacity: 1;
+        filter: blur(35px) brightness(1);
+    }
+}
+
+/* Animation Classes */
+.fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slideInUp {
+    animation: slideInUp 0.8s ease-out forwards;
+}
+
+.float {
+    animation: float 6s ease-in-out infinite, pulse 4s ease-in-out infinite;
+}
+
+/* Gradient Text Animation */
+.gradientText {
+    background: linear-gradient(
+        90deg,
+        #667eea 0%,
+        #764ba2 25%,
+        #f093fb 50%,
+        #667eea 75%,
+        #764ba2 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s ease infinite;
+    display: inline-block;
+}
+
+/* Initial States (hidden before animation) */
+.homeLeft h1,
+.homeLeft h2 {
+    opacity: 0;
+}
+
+/* Enhanced hover effects */
+.homeContent {
+    transition: all 0.3s ease;
+}
+
+/* Performance optimization */
+.homepageImg1,
+.homepageImg2,
+.homepageImg3 {
+    will-change: transform, opacity;
+}
+
+.gradientText {
+    will-change: background-position;
+}
+
+/* Small mobile improvements */
+@media screen and (max-width: 480px) {
+    .homeLeft h1 {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+    .homeLeft h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .homeLeft h1 {
+        font-size: 36px;
+    }
+    .homeLeft h2 {
+        font-size: 15px;
     }
 }

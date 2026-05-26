@@ -24,7 +24,7 @@ export default function Home() {
 
 
     <main className={tpcStyles.main}>
-      <Navbar></Navbar>
+      <Navbar bgColor="26, 29, 40"></Navbar>
       <section id={styles.context}>
         <div className={styles.contextContent}>
           <div className={styles.headers}>

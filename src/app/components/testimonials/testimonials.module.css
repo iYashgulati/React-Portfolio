@@ -1,6 +1,26 @@
 
 #clientsWord {
   position: relative;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+#clientsWord::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  width: 260px;
+  height: 130px;
+  background-image: url('/img/logo/PNG-02.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.03;
+  filter: grayscale(100%) brightness(0);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .testmonalContainer {
@@ -27,8 +47,8 @@
 .clientsWordContent {
   width: 100%;
   height: 100%;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,22 +56,24 @@
 }
 
 .clientsWordContent h1 {
-  font-size: 50px;
+  font-size: 70px;
   color: #fff;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   text-align: center;
   z-index: 99;
+  letter-spacing: -3px;
 }
 
 .clientsWordContent h3 {
   color: #9ab9ef;
   margin-bottom: 10px;
-  font-family: 'Space Mono';
-  font-weight: 300;
-  font-size: 18px;
-  letter-spacing: 0.5px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -60,6 +82,35 @@
 
 .clientsWordContent .differentColorBold {
   color: #9ab9ef;
+}
+
+.purpleText {
+  background: linear-gradient(
+      90deg,
+      #667eea 0%,
+      #764ba2 25%,
+      #f093fb 50%,
+      #667eea 75%,
+      #764ba2 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+  display: inline-block;
+}
+
+@keyframes gradientShift {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 #testimonials {
@@ -120,10 +171,11 @@
 }
 
 .testimonal {
-  border: 1px solid #9ab9ef;
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) 1;
   width: 625px;
   height: 350px;
-  position: relative;  
+  position: relative;
 }
 
 .testimonalRightContent {

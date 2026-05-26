@@ -23,7 +23,7 @@ export default function Home() {
 
 
     <main className={tpcStyles.main}>
-      <Navbar></Navbar>
+      <Navbar bgColor="25, 24, 28"></Navbar>
       <section id={styles.context}>
         <div className={styles.contextContent}>
           <div className={styles.headers}>

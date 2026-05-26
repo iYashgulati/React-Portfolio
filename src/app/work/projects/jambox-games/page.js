@@ -22,7 +22,7 @@ export default function Home() {
     return (
 
         <main className={jamStyles.main}>
-            <Navbar></Navbar>
+            <Navbar bgColor="48, 140, 180"></Navbar>
             <section id={styles.context}>
                 <div className={styles.contextContent}>
                     <div className={styles.headers}>

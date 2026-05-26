@@ -11,8 +11,7 @@ export default function Contact() {
   return (
 
         <section id={styles.footer}>
-            <div class={styles.dotted}></div>
-            <div class={styles.homeContent}>
+            <div className={styles.homeContent}>
           <div className={styles.footerImg}>
             <img src={shape053} id={styles.topRightFoot}></img>
             <img src={shape087} id={styles.midRightFoot}></img>
@@ -21,8 +20,22 @@ export default function Contact() {
           <div className={styles.footerContainer}>
             <div className={styles.footerContent}>
               <h5>Lets Get In Contact</h5>
-              <h1> My Inbox Is <span className={styles.italicSpaceMono}> Always Open</span> For Freelance Opportuanities</h1>
-              <p> Have an exciting project that you want to embark on? <br></br> Send me an <a href={'mailto:i.yashgulati@gmail.com'}> email</a> or message me on <a href={'https://</p>www.fiverr.com/yash2007'}> fiverr</a> and let's get started!</p>
+              <h1> I'm <span className={styles.italicSpaceMono}> Always Eager</span> To Connect, Learn, And Explore New Ideas</h1>
+              <p>
+                Whether you have an ambitious project to bring to life or just want to share ideas and collaborate...
+                <br></br>
+                Send me an <a href={'mailto:ygulati2@illinois.edu'}> Email</a> or connect with me on <a href={'https://www.linkedin.com/in/iamyashgulati/'} target="_blank" rel="noopener noreferrer"> LinkedIn</a> and let's get started!
+              </p>
+              <div className={styles.contactButtons}>
+                <a href="/resume.pdf" download="Yash_Gulati_Resume.pdf" className={styles.contactResumeBtn}>
+                  <span>Download Resume</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
             </div >
           </div >
           </div>

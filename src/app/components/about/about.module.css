@@ -37,6 +37,7 @@
     color: white;
     font-size: 48px;
     overflow-y: visible;
+    padding-bottom: 30px;
 }
   .aboutImages .aboutTopRightBlur {
     position: absolute;
@@ -52,9 +53,9 @@
     left: 0;
   }
   
-  .aboutContent {  
+  .aboutContent {
     padding-top: 100px;
-    padding-bottom: 75px;
+    padding-bottom: 100px;
     padding-left: 75px;
     padding-right: 75px;
     display: flex;
@@ -68,27 +69,60 @@
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 70px;
+    letter-spacing: -3px;
+    line-height: 1.1;
   }
-  
+
+  .purpleText {
+    background: linear-gradient(
+        90deg,
+        #667eea 0%,
+        #764ba2 25%,
+        #f093fb 50%,
+        #667eea 75%,
+        #764ba2 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s ease infinite;
+    display: inline-block;
+  }
+
+  @keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
   .aboutContent p {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
+    line-height: 1.6;
   }
-  
+
   .aboutLeft h5 {
     color: #9ab9ef;
-    margin-bottom: 10px;
-    font-family: 'Space Mono';
-    font-weight: 300;
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    margin-bottom: 15px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   
   .aboutLeft {
@@ -98,41 +132,44 @@
   .aboutRight {
     width: 40%;
   }
-  
+
   .aboutRight img {
     width: 80%;
+    transition: transform 0.1s ease-out;
+    transform-style: preserve-3d;
   }
   
   .aboutLeft a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 10px 17px;
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid white;
-    position: relative;
-    top: 30px;
-    font-size: 17px;
-    letter-spacing: 1px;
-  }
-  
-  
-  .aboutLeft a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 17px;
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid white;
+    font-family: Poppins, sans-serif;
+    border: 1px solid #fff;
     position: relative;
     top: 30px;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    transition: 250ms all linear;
+    transition: all .25s linear;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
   }
-  
+
   .aboutLeft a:hover {
     background: white;
     color: black;
+  }
+
+  .buttonArrow {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .aboutLeft a:hover .buttonArrow {
+    transform: translateX(3px);
   }
   
 
@@ -174,13 +211,22 @@
     filter: blur(30px);
     width: 200px;
   }
+
+  .homeContent {
+    padding-bottom: 10px;
+  }
+
+  .aboutContent {
+    padding-bottom: 0;
+  }
+
   .aboutLeft {
     width: 100%;
   }
 
   .aboutRight {
     width: 100%;
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   .aboutRight img {
@@ -205,6 +251,69 @@
 
 @media screen and (max-width: 450px) {
   .aboutLeft a {
-    font-size: 10px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .aboutLeft a {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 9px 18px;
+  }
+}
+
+/* Scroll Reveal Animations */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatShape {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+/* Initial hidden state */
+.aboutLeft,
+.aboutRight {
+  opacity: 0;
+}
+
+/* Visible state when scrolled into view */
+.aboutLeft.visible {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.aboutRight.visible {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+/* Floating animation for the blur shape */
+.aboutTopRightBlur {
+  animation: floatShape 8s ease-in-out infinite;
+}
+

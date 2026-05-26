@@ -18,7 +18,7 @@ function ClientsWord() {
 
   return (
     <section id={styles.clientsWord}>
-        <div class={styles.dotted}></div>
+        <div className={styles.dotted}></div>
       <div className={styles.reviewImages}>
         <img src={shape014} id={styles.topRightCl} />
         <img src={shape028} id={styles.topRightClQn} />
@@ -26,7 +26,7 @@ function ClientsWord() {
       </div>
       <div className={styles.clientsWordContent}>
       <h3> A few words from my clients</h3>
-        <h1> 5 Star Reviews</h1>
+        <h1> 5 Star <span className={styles.purpleText}>Reviews</span></h1>
         <div className={styles.testmonalContainer}>
           {slideIndex === 0 && (
             <div className={styles.testimonal} id={styles.fade}>

@@ -2,15 +2,35 @@
 .actFooter {
     position: relative;
     background: var(--footerbg);
+    overflow: hidden;
   }
-  
+
+  .actFooter.withDots::before {
+    content: '';
+    --dotSize: 0.06rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.346) var(--dotSize), transparent 0);
+    background-size: 1.35rem 1.35rem;
+    background-repeat: round;
+    background-position: center;
+    z-index: 0;
+    pointer-events: none;
+  }
+
   .actFooter p {
+    position: relative;
+    z-index: 1;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 200;
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 20px;
   }
   
   .sectionLine {

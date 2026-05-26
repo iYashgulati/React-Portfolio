@@ -24,7 +24,7 @@ export default function Home() {
 
 
     <main className={cosStyles.main}>
-      <Navbar></Navbar>
+      <Navbar bgColor="29, 37, 49"></Navbar>
 
       <section id={styles.context}>
         <div className={styles.contextContent}>

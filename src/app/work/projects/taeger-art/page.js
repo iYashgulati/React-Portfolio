@@ -24,7 +24,7 @@ export default function Home() {
 
 
     <main className={taegerStyles.main}>
-      <Navbar></Navbar>
+      <Navbar bgColor="102, 88, 123"></Navbar>
 
       <section id={styles.context}>
         <div className={styles.contextContent}>

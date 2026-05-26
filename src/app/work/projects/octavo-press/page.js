@@ -24,7 +24,7 @@ export default function Home() {
 
 
     <main className={octavoStyles.main}>
-      <Navbar></Navbar>
+      <Navbar bgColor="69, 72, 94"></Navbar>
       <section id={styles.context}>
         <div className={styles.contextContent}>
           <div className={styles.headers}>
