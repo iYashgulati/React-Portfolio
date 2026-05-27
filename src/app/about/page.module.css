@@ -1676,7 +1676,7 @@
 
     .courseCode {
         margin-top: 10px;
-        align-self: flex-start;
+        align-self: flex-end;
     }
 
     .shape1,
