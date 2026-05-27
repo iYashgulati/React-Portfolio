@@ -73,7 +73,7 @@ export default function Index() {
             <div className={styles.homeContent}>
                 <div className={styles.homeLeft}>
                     <h1 ref={h1Ref}>
-                        Hello — I'm <span className={styles.gradientText}>Yash</span>.<br />
+                        Hello — I'm <span className={styles.gradientText}>Yash.</span><br />
                         An Aspiring Computer Engineer.
                     </h1>
 

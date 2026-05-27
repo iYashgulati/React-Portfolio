@@ -66,7 +66,7 @@ export default function About() {
 			<div className={styles.aboutContent}>
 				<div className={styles.aboutLeft} ref={contentRef}>
 					<h5>About Me</h5>
-					<h1>Building from <span className={styles.purpleText}>Web Dev</span> to <span className={styles.purpleText}>Machine Learning</span>.</h1>
+					<h1>Building from <span className={styles.purpleText}>Web Dev</span> to <span className={styles.purpleText}>Machine Learning.</span></h1>
 					<p>
 						I am Yash, a computer engineering student passionate about AI and machine learning.
 						My journey started with 5 years of web development, where I learned to build and ship digital products.
