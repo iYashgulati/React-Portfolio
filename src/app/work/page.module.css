@@ -619,6 +619,11 @@
         font-size: 14px;
     }
 
+    .statsSection {
+        padding: 60px 20px;
+        margin: 20px 0;
+    }
+
     .statsGrid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;

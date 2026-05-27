@@ -42,13 +42,11 @@ export default function About() {
                                 card.classList.add(styles.visible)
                             }, index * 100)
                         })
-                    } else {
-                        // Remove visible class when section leaves viewport (for shape fade out)
-                        entry.target.classList.remove(styles.visible)
                     }
+                    // Don't remove visible class - keep elements visible once animated
                 })
             },
-            { threshold: 0.25 }
+            { threshold: 0.1 }
         )
 
         if (introRef.current) observer.observe(introRef.current)
