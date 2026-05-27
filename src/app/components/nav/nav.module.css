@@ -243,11 +243,15 @@
   }
 
   .links a {
-    margin-top: 90px;
+    margin-top: 40px;
     font-size: 14px;
     opacity: 0;
     transform: translateX(30px);
     transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .links a:first-child {
+    margin-top: 60px;
   }
 
   .links.linksCenter a {
@@ -276,7 +280,7 @@
   }
 
   .resumeBtn {
-    margin-bottom: 60px !important;
+    margin-bottom: 20px !important;
   }
 
   .nav .logo {
