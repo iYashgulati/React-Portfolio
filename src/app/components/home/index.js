@@ -78,7 +78,7 @@ export default function Index() {
                     </h1>
 
                     <h2 ref={h2Ref}>
-                        Building digital experiences through code — from web development
+                        Building digital experiences through code — from web developmenta
                         to robotics, exploring how software shapes the physical world.
                     </h2>
                 </div>
