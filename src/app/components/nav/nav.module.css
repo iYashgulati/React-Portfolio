@@ -16,8 +16,12 @@
 }
 
 .navColored {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
-  border-bottom: 1px solid rgba(154, 185, 239, 0.3);
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.navColored .links {
+  border-bottom: none;
 }
 
 .nav .logo {
@@ -30,6 +34,7 @@
   display: flex;
   align-items: center;
   right: 50px;
+  background: transparent;
 }
 
 .nav .logo img {
@@ -215,7 +220,7 @@
     display: block;
   }
 
-  .links {
+  .nav .links {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 70px);
@@ -227,12 +232,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     opacity: 0;
     visibility: hidden;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .links.linksCenter{
@@ -243,7 +249,7 @@
   }
 
   .links a {
-    margin-top: 40px;
+    margin-top: 60px;
     font-size: 14px;
     opacity: 0;
     transform: translateX(30px);
@@ -251,7 +257,7 @@
   }
 
   .links a:first-child {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   .links.linksCenter a {

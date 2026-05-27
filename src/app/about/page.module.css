@@ -23,7 +23,7 @@
     opacity: 0.03;
     filter: grayscale(100%) brightness(0);
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
 }
 
 .aboutPage::before {
@@ -38,7 +38,7 @@
     background-position: center;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -547,6 +547,7 @@
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    z-index: 10;
 }
 
 .educationCard::before {
@@ -836,6 +837,8 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 .courseCard.visible {
@@ -954,6 +957,8 @@
     padding: 25px 30px;
     transition: all 0.4s ease;
     opacity: 0;
+    position: relative;
+    z-index: 10;
 }
 
 .clubCard.visible {
@@ -1143,7 +1148,7 @@
     gap: 12px;
     justify-content: center;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     max-width: 900px;
     margin: 0 auto;
 }

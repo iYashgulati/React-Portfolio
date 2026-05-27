@@ -213,9 +213,6 @@ export default function About() {
 
             {/* Courses Section */}
             <section className={styles.coursesSection} ref={coursesRef}>
-                <img src={shape028} className={styles.shape4} alt="Decorative shape" />
-                <img src={shape087} className={styles.coursesShape1} alt="Decorative shape" />
-                <img src={shape107} className={styles.coursesShape2} alt="Decorative shape" />
                 <div className={styles.container}>
                     <p className={styles.sectionSubtitle}>
                         Building foundations in CS and engineering
@@ -331,9 +328,6 @@ export default function About() {
 
             {/* Clubs & Organizations Section */}
             <section className={styles.clubsSection} ref={clubsRef}>
-                <img src={shape014} className={styles.shape5} alt="Decorative shape" />
-                <img src={shape035} className={styles.clubsShape1} alt="Decorative shape" />
-                <img src={shape053} className={styles.clubsShape2} alt="Decorative shape" />
                 <div className={styles.container}>
                     <p className={styles.sectionSubtitle}>
                         Clubs, Research & Leadership 
@@ -382,8 +376,6 @@ export default function About() {
 
             {/* Skills & Expertise Section */}
             <section className={styles.skillsSection} ref={skillsRef}>
-                <img src={shape041} className={styles.shape6} alt="Decorative shape" />
-                <img src={shape064} className={styles.skillsShape2} alt="Decorative shape" />
                 <div className={styles.container}>
                     <p className={styles.sectionSubtitle}>
                         Technologies I work with
@@ -414,10 +406,6 @@ export default function About() {
 
             {/* CTA Section */}
             <section className={styles.ctaSection} ref={ctaRef}>
-                <img src={shape053} className={styles.ctaShape1} alt="Decorative shape" />
-                <img src={shape087} className={styles.ctaShape2} alt="Decorative shape" />
-                <img src={shape041} className={styles.ctaShape3} alt="Decorative shape" />
-                <img src={shape014} className={styles.ctaShape4} alt="Decorative shape" />
                 <div className={styles.ctaContainer}>
                     <div className={styles.ctaContent}>
                         <h5 className={styles.ctaLabel}>Lets Get In Contact</h5>

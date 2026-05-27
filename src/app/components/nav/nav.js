@@ -25,15 +25,16 @@ export default function Navbar({ variant = 'default', bgColor = null }) {
     }
   };
 
-  const navStyle = bgColor ? { background: `rgba(${bgColor}, 0.95)` } : {};
+  const navStyle = bgColor ? { background: `rgba(${bgColor}, 1)` } : {};
+  const linksStyle = bgColor ? { background: `rgba(${bgColor}, 1)` } : {};
 
   return (
 
-    <nav className={`${styles.nav} ${variant === 'colored' ? styles.navColored : ''}`} style={navStyle}>
+    <nav className={`${styles.nav} ${variant === 'colored' || bgColor ? styles.navColored : ''}`} style={navStyle}>
       <div className={styles.logo}>
         <img src={logo} alt=""></img>
       </div>
-      <div className={styles.links} ref={links}>
+      <div className={styles.links} ref={links} style={linksStyle}>
         <a href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}>Home
           <div className={styles.line}></div>
         </a>
