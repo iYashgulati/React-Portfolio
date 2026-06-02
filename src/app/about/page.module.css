@@ -619,15 +619,22 @@
 }
 
 .minorInfo {
-    font-size: 16px;
-    background: linear-gradient(135deg, #9ab9ef 0%, #b8a4f5 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-style: italic;
-    font-weight: 500;
+    font-size: 15px;
+    color: #b8a4f5;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     margin: 5px 0 0 0;
     letter-spacing: 0.3px;
+}
+
+.gpaInfo {
+    font-size: 15px;
+    color: #9ab9ef;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    margin: 5px 0 0 0;
+    letter-spacing: 0.5px;
 }
 
 .statusContainer {

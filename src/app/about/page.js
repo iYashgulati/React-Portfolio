@@ -156,7 +156,8 @@ export default function About() {
                                     <div>
                                         <h3 className={styles.degreeTitle}>Bachelor of Science, Computer Engineering</h3>
                                         <p className={styles.universityName}>University of Illinois at Urbana-Champaign</p>
-                                        <p className={styles.minorInfo}>Minor in Computer Science</p>
+                                        <p className={styles.minorInfo}>Minor in Statistics</p>
+                                        <p className={styles.gpaInfo}>Technical GPA: 4.0 / 4.0 | GPA: 3.96 / 4.0</p>
                                     </div>
                                 </div>
                                 <div className={styles.statusContainer}>
